@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>myOAuth</title>
+
+    <!--Reference platform.js library here-->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!--Reference Client ID in meta tag here-->
+
+    <!--15643429133-8d2a0cj8i9v4i93jimgvea704v33b3gk.apps.googleusercontent.com-->
+    <meta name="google-signin-client_id" content="15643429133-8d2a0cj8i9v4i93jimgvea704v33b3gk.apps.googleusercontent.com">
+
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--custom files-->
+    <script src="lib/js/main.js"></script>
+    <link rel="stylesheet" href="lib/css/style.css">
+</head>
+<body>
+    <div class="signs">
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <a href="#" class="signOut" onclick="onSignOut();">Sign out</a>
+    </div>
+
+
+    <div class ="mainContainer">
+        <!--Text greeting user-->
+        <header>
+            <h1>WELCOME <span class="userName">USER_NAME</span></h1>    
+        </header>
+
+        <!--Populate section with user data-->
+        <section>
+            <!--picture-->
+            <div class = "userImg">
+                <img src="assets/placeholder.png">
+            </div>
+
+            <!--User Data-->
+            <div class="userData">
+                <h2>E-MAIL:</h2>
+                <p class="email">example@example.com</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
